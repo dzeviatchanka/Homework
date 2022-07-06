@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Поиск авто</h1>
+    <form action="https://fom.in.ua/echo">
+         <div>
+             <h3><label for="list"> Выберите тип транспорта</label></h3>
+         </div> 
+         <div>
+            <select name="auto" id="list">
+                <option value="Легковое авто">Легковое авто</option>
+                <option value="Грузовое авто">Грузовое авто</option>
+                <option value="Мото">Мото</option>
+                <option value="Водный транспорт">Водный транспорт</option>
+            </select>
+         </div>  
+         <br>
+         <div>
+            <input type="checkbox" name="check" id="condition">
+            <label for="condition">б/у</label> 
+            <input type="checkbox" name="check" id="new">
+            <label for="new">новые</label>
+            <input type="checkbox" name="check" id="credit">
+            <label for="credit">в кредит</label>
+            <input type="checkbox" name="check" id="customs">
+            <label for="customs">растаможенная</label>
+            <input type="reset" value="сбросить">
+         </div>
+         <div>
+            <h3>
+                <label for="marka"> Марка авто</label>
+            </h3>
+         </div>
+         <select  name="marka_auto" id="marka"> 
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Range Rover">Range Rover</option>
+            <option value="Chevrolet">Chevrolet</option>
+         </select>
+         <div>
+            <h3>
+                <label for="country"> Страна  производитель</label>
+            </h3>
+         </div>
+         <select name="place" id="country"> 
+            <option value="Япония">Япония</option>
+            <option value="Франция">Франция</option>
+            <option value="Германия">Германия</option>
+            <option value="Китай">Китай</option>
+         </select>
+         <div>
+            <h3>
+                <label for="case"> Типо кузова </label>
+            </h3>
+         </div>
+         <select name="case_auto" id="case"> 
+            <option value="кабриолет">Кабриолет</option>
+            <option value="универсал">Универсал</option>
+            <option value="седан">Седан</option>
+            <option value="хэтчбек">Хетчбек</option>
+         </select>
+         <div>
+            <h3>
+                <label for="cost"> Цена($)</label>
+            </h3>
+         </div>
+         <p> 
+            от 
+            <input type="number" name="price" id="cost" min="1" max="1000000" step="1" >
+             до
+            <input type="number" name="price" id="cost2" min="1" max="1000000" step="1" >
+         </p>
+         <div>
+            <h3>
+                <label for="time">Год выпуска</label>
+            </h3>
+         </div>
+         <p>
+             от 
+            <input type="number" name="year" id="time" min="1960" max="2022" step="1" >
+            до
+            <input type="number" name="year" id="time2" min="1960" max="2022" step="1" >
+         </p>
+         <div>
+            <h3>
+                <label>Тип двигателя</label>
+            </h3> 
+            <p>
+                <input type="checkbox" name="typ" id="gasoline">
+                <label for="gasoline">бензин</label>
+                <input type="checkbox" name="typ" id="diesel">
+                <label for="diesel">дизель</label>
+                <input type="checkbox" name="typ" id="gas">
+                <label for="gas">газ</label>
+                <input type="checkbox" name="typ" id="electro">
+                <label for="electro">электро</label>
+                <input type="checkbox" name="typ" id="hibrid">
+                <label for="hibrid">гибрид</label>
+            </p>
+         </div>
+         <div>
+            <h3>
+                <label for="box">Тип коробки</label>
+            </h3>
+            <label>
+                 автомат
+                 <input type="radio" name="автомат" id="box" checked>
+            </label>
+            <label>
+                механика
+                <input type="radio" name="автомат" id="box2" value="механика">
+            </label>
+         </div>
+         <div>
+            <h3>
+                <label for="col">Цвет</label> 
+                <input type="color" name="color" id="col">
+            </h3>
+         </div>
+         <div>
+            <h3>
+                <label for="comf"> Комфорт</label>
+            </h3>
+            <select name="comfort" id="comf" multiple>
+                <option>автозапуск двигателя</option>
+                <option>круиз-контроль</option>
+                <option>электрорегулировка сидений</option>
+                <option>управление мультимедиа с руля</option>
+                <option>люк</option>
+                <option>панарамная крыша</option>
+                <option>обогрев сидений</option>
+            </select>
+         </div>
+         <p>
+            <input type="reset" value="Сбросить">
+            <input type="submit" value="Поиск">
+         </p> 
+</form>
+</body>
+</html>

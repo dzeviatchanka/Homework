@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Авторизация</h1>
+    <form action="https://fom.in.ua/echo">
+        <p>
+            <label for="login">Логин</label>
+        </p>
+        <input type="email" id="login" name="email" style="width: 15%;"  placeholder="e-mail">
+        <p>
+            <label for="pass"> Пароль (не менее 6 символов)</label>
+        </p>
+        <input type="password" id="pass"  name="password" style="width: 15%;" placeholder="пароль" minlength="6">
+        <p>
+            <label>
+                <input type="checkbox" checked name="checkbox">
+                запомнить пароль
+            </label>
+        </p>
+        <input type="submit" value="Войти">
+    </form>
+</body>
+</html>

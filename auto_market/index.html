@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+</head>
+<body>
+    <h1>Форма регистрации пользователя</h1>
+    <form action="https://fom.in.ua/echo">
+    <div style="float:left; width: 25%;">
+         <p>
+             <label for="name">Имя</label>
+         </p>
+         <input type="text" style='width: 50%' name="title" id="name" placeholder="Введите ваше имя">
+         <p>
+             <label for="lastname">Фамилия</label>
+         </p>
+         <input type="text" style='width: 50%' name="title1" id="lastname" placeholder="Введите вашу фамилию">
+         <p>
+             <label for="e-mail">Электронная почта</label>
+         </p>
+         <input style='width: 50%' id="e-mail"  name="e-mail" type="email" placeholder="Введите ваш e-mail">
+         <p>
+             <label for="+380">Контактный телефон</label>
+         </p>
+        <input style='width: 50%' type="tel" id="+380" name="tel" placeholder="063-8672004" pattern="[0-9]{3}-[0-9]{7}">
+    </div>    
+    <div style="float:left; width:25%;">      
+        <p>
+             <label for="date"> Дата рождения</label>
+        </p>
+         <input  id="date" type="date" name="Дата Рождения" >
+        <p>
+            <label for="pass">Пароль (не менее 6 символов)</label>
+        </p>
+        <input type="password" name="пароль" id="pass" minlength="6">
+        <p>
+            <label for="repeatpassword">Повторите пароль</label>
+        </p>
+        <input type="password" name="password2" id="repeatpassword" minlength="6">
+        <p>
+           <label for="files">Прикрепите файл</label>
+        </p>
+        <input type="file" name="attach_file" id="files">
+        <p>
+            <label>
+                <input type="checkbox" checked name="checkbox">
+                Я согласен(-на) на обработку персональных данных
+            </label>
+        </p>
+        <input type="submit" value="Зарегистрироваться">
+    </div>
+    </form>
+</body>
+</html>
